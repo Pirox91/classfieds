@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Signika:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Signika:wght@700&family=Yantramanav&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  text-transform: capitalize;
+  font-family: 'Yantramanav', sans-serif;
+}
+:root{
+  --red:#CF1434ff;
+  --black: #000000ff;
+  --battleship-grey: #848484ff;
+  --cultured: #F3F4F7ff;
+  --gainsboro: #E4E7EDff;
+}
+.hi{
+  display:flex;
+  
+}
+.flexcont{
+  font-family: 'Yantramanav', sans-serif;
+  display:flex;
+  flex-direction: column;
+}
+.navul {
+  padding-left: 25px;
+  display: flex; 
+  color:black;
+  font-size: 12px;
+}
+a {
+  color:var(--black);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em; 
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(255, 5, 5);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+a:link{
+    color: #000;
+}
+.navli {
+  text-transform: capitalize;
+  list-style: none;
+  color:red
+}
+.navigation .uppernav{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.ic{
+  background:transparent;
+  color:white;
+  height: 2rem;
+}
+.icon{
+  height:1.5rem;
+}
+
+.navigation {
+  display: flex;
+  background-color:var(--gainsboro);
+  border-bottom: 2px solid var(--battleship-grey);
+  color:black;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.uppernav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  background-color:var(--black);
+  border-bottom: 4px solid #CF1434ff;
+  color:white;
+  width: 100%;
+}
+header{
+  font-family: 'Open Sans', sans-serif;
+  color:var(--white);
+}
+.buttonClass {
+  text-transform: capitalize;
+  font-size:15px;
+  padding: 9px;
+  margin-left:10px;
+  border-radius: 5px;
+  border-width:1px;
+  color:white;
+  border-color:var(--red);
+  background:transparent;
+  font-weight:700;
+}
+.buttonClass2 {
+ text-transform: capitalize;
+ font-size:15px;
+ padding: 9px;
+
+ color:white;
+ font-weight:700;
+}
+.buttonClass3 {
+  text-transform: capitalize;
+  font-size:15px;
+  padding: 9px;
+  margin-left:10px;
+  border-radius: 5px;
+  border-width:1px;
+  background-color:var(--red);
+  color:white;
+  font-weight:700;
+}
+.buttonClass3:hover {
+  background: rgb(175, 16, 43)
+}
+.buttonClass4 {
+  text-transform: capitalize;
+  font-size:15px;
+  padding: 9px;
+  margin-left:10px;
+  border-radius: 5px;
+  border-width:1px;
+  background-color:white;
+  color:var(--red);
+  font-weight:700;
+}
+.buttonClass4:hover {
+  background: #ebd5d5
+}
+.bye{
+  font-size: 18px;
+}
+.searchInput{
+  width: 30vw;
+  justify-self: stretch;
+  border-radius: 100px;
+}
+.buttonClass:hover {
+  background: var(--red)
+}
+.welcome{
+  text-transform: capitalize;
+  width:100vw;
+  max-width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-image:
+  url("assets/imgMobo.jpg");
+  background-position: center;
+}
+#title{
+  color:var(--red);
+  text-shadow:#C04CFD
+}
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 100vw;
+
+ 
+}
+img{
+  max-height: 600px;
+}
+.cta{
+  display:flex;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: center;
+  height:600px;
+  z-index: 6;
+  font-family: 'Signika', sans-serif;
+  font-size: 50px;
+  color:white;
+  text-shadow: 2px 2px #0A1F58;
+}
+.category{
+  width: auto;
+  max-width: 100%;
+  display:flex;
+  padding:40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color:var(--white) ;
+}
+.category > div {
+  width: 20vw;
+  height: 200px;
+  background-size:  20vw 200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ color :white;
+ text-transform: capitalize;
+ text-shadow: 2px 2px black;
+ border: 2px solid var(--red);
+ border-radius: 2px;
+ background-position: center;
+}
+.contact{
+  display:flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background-color:black;
+  padding-left: 20px;
+  border-top: 4px solid var(--red);
+  justify-content: center;
+  align-items: left;
+  color:white;
+}
+#gpu{
+  background-image:url("assets/gpu.jpg");
+
+}
+#cpu{
+  background-image:
+  url("assets/cpu.jpg");
+  
+}
+#ram{
+  background-image:
+  url("assets/ram.jpg");
+
+}
+#mobo{
+  background-image:
+  url("assets/mobo.jpg");
+ 
+}
+#ssd{
+  background-image:
+  url("assets/ssd.jpg");
+ 
+}
+#psu{
+  background-image:
+  url("assets/psu.jpg");
+ 
+}
+#case{
+  background-image:
+  url("assets/case.jpg");
+  background-size: cover;
+}
+#monitor{
+  background-image:
+  url("assets/monitor.jpg");
+
+}
+#pc{
+  background-image:
+  url("assets/pc.jpg");
+  background-size: cover;
+
+}
+#console{
+  background-image:
+  url("assets/console.jpg");
+
+}
+.searchInput {
+  width: 30rem;
+  height: 2rem;
+  padding-left: 10px;
+  border-radius: 2rem;
+  color:var(--black);
+  border: 2px solid #CF1434ff;
+  transition: transform 0.1s ease-in-out;
+}
+::placeholder {
+  color: #a1a1a1;
+}
+::placeholder:focus {
+  color: #a1a1a1;
+}
+.searchInput:focus {
+  outline: none;
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+}
+
+.searchInputIcon {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.5rem;
+  color: #a1a1a1;
+  transition: all 0.1s ease-in-out;
+}
+
+.container:focus-within > 
+.searchInputWrapper > .searchInputIcon {
+  right: 0.2rem;
+}
